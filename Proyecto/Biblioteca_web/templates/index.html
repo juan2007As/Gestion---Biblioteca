@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/estilos_menu_principal.css">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <div class="Box">
+        <img src="{{ url_for('static', filename='imagenes/LogoInicial.jpg') }}" alt="Logo" class="Box__img">
+        <h1 class="Box__Title">Bienvenido a la Biblioteca.</h1>
+        <div class="Box_administracion">
+            <h2 class="Administracion__title">Opciones de administracion</h2>
+        </div>
+        <div class="Menu">
+            <ul>
+            <li><a href="{{ url_for('listar_libros') }}">Gestión de Libros</a></li>
+            <li><a href="{{ url_for('listar_usuarios') }}">Gestión de Usuarios</a></li>
+            <li><a href="{{ url_for('menu_prestamos') }}">Gestión de Préstamos</a></li>
+            <li><a href="{{ url_for('reportes') }}">Reportes</a></li>
+
+            </ul>
+        </div>
+    <script src="../static/script.js"></script>
+</body>
+</html>
+
+
+
